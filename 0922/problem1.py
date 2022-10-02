@@ -21,3 +21,11 @@ for i in range(1,n+1):
 # for else문 for문이 break 없이 다 끝난다면 else문 실행한다
 else: 
     print(-1)
+
+
+# input 8 4 output 8
+# input 25 5 output -1
+# input 100 5 output 10
+# input 100 7 output 25
+# input 1000 12 output 125
+
