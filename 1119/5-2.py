@@ -1,0 +1,21 @@
+# 큐 예제 
+# 파이썬에서는 큐를 쓸려면 deque를 쓰는게 더 좋다
+
+from collections import deque
+
+# 큐 (Queue) 구현을 위해 deque 라이브러리 사용
+queue = deque()
+
+queue.append(5)
+queue.append(2)
+queue.append(3)
+queue.append(7)
+queue.popleft()
+queue.append(1)
+queue.append(4)
+queue.popleft()
+
+
+print(queue)
+queue.reverse() #역순으로 바꾸기
+print(queue)
