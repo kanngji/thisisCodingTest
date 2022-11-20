@@ -17,7 +17,9 @@ print(array1)
 array3 = [('바나나',2),('사과',5),('당근',3)]
 
 def setting(data):
-    return data[0]
+    return data[0] # data[0] 으로 하면 첫번째 원소 ㄱ ㄴ ㄷ #data[1] 로 하면 두번째 원소 1 2 3
 
 result = sorted(array3, key=setting)
 print(result)
+
+
