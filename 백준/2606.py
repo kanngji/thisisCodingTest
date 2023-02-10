@@ -20,3 +20,6 @@ def dfs(graph,v,visited):
         if visited[i]==0:
             cnt+=1
             dfs(graph,i,visited)
+
+dfs(graph,1,visited)
+print(cnt)
