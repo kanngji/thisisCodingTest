@@ -36,6 +36,7 @@ def bfs(x):
 
         for i in range(n):
             if check[i]==0 and graph[q][i]==1:
+                queue.append(i)
                 check[i]=1
                 visited[x][i]=1
 
@@ -43,4 +44,6 @@ def bfs(x):
 for i in range(0,n):
     bfs(i)
 
+for i in visited:
+    print(*i)
 
