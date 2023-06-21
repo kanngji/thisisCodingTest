@@ -28,3 +28,25 @@ for _ in range(n):
   
 # TC는 다 맞췃는데 반례를 못ㅂ맞춰서 쏠 못함 
 # 예전에는 맞췃는데 하...
+
+n = int(input())
+for _ in range(n):
+  flag = True
+  s = input()
+  stack = []
+  for i in s:
+    if i == '(':
+      stack.append('(')
+    else:
+      if len(stack) == 0:
+
+        flag = False
+        break
+      else:
+        stack.pop()
+  if len(stack) != 0:
+    flag = False
+  if len(stack) == 0 and flag == True:
+    print("YES")
+  if flag == False:
+    print("NO")
