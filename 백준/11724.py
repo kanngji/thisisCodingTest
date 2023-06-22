@@ -1,6 +1,6 @@
 # 연결 요소의 개수
 import sys
-sys.setrecursionlimit(10**7)
+sys.setrecursionlimit(10**7) # 파이썬 기본 재귀 깊이 제한 풀기
 input = sys.stdin.readline
 
 n,m = map(int,input().split())
