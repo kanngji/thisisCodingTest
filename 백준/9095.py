@@ -21,3 +21,25 @@ for _ in range(T):
     target = int(input())
     arr=[0] * (target+1)
     print(dfs((target)))
+
+############################################
+t = int(input())
+
+def dfs(n,hap):
+  global answer
+  if hap==n:
+    answer+=1
+    return
+  if hap>n:
+    return
+  else:
+    dfs(n,hap+1)
+    dfs(n,hap+2)
+    dfs(n,hap+3)
+for _ in range(t):
+  n = int(input())
+  answer=0
+  dfs(n,0)
+  
+  print(answer)
+  
