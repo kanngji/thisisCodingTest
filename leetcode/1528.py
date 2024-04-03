@@ -4,3 +4,4 @@ class Solution:
         for i in range(len(s)):
             ans[indices[i]] = s[i]
         return ''.join(ans)
+    
