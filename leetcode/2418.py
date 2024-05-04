@@ -11,4 +11,18 @@ class Solution:
 
 # 해쉬, 맵
 # case1 은 통과 case2 동명이인은 실패.
+class Solution:
+    def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+        
+        dict_hn = {h:n for h,n in zip(heights,names)}
+
+        dict_hn = sorted(dict_hn.items(),reverse=True,key=lambda x:x[0])
+
+        ans = [value for key, value in dict_hn]
+
+        return ans
+
+# lambda 정렬 연습        
+                
+
     
