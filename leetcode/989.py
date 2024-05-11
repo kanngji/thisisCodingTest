@@ -9,3 +9,6 @@ class Solution:
         ans = [int(x) for x in str(ans)]
 
         return ans
+    
+
+# ''.join(map(str,num))
