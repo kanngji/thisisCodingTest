@@ -2,6 +2,7 @@ class Solution:
     def isPathCrossing(self, path: str) -> bool:
         
 
+        # 원점
         stand = (0,0)
         se = set()
         se.add((0,0))
