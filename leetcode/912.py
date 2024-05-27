@@ -31,3 +31,6 @@ class Solution:
                 k += 1
         
         return nums
+    
+# 912 
+# 퀵정렬 병합정렬 힙정렬 공부하기
